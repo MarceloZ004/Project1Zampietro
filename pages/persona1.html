@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona 1</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Style for aligning the table and image side by side */
+        .table-image-container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        /* Table styling */
+        table {
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #333;
+        }
+
+        /* Styling for the image */
+        img {
+            margin-left: 20px;
+            border: 1px solid #333;
+        }
+
+        /* Section styling */
+        section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="persona1.html">Persona 1</a></li>
+                <li><a href="persona2.html">Persona 2</a></li>
+                <li><a href="scenario1.html">Scenario 1</a></li>
+                <li><a href="scenario2.html">Scenario 2</a></li>
+                <li><a href="moodboard.html">Moodboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Persona 1</h1>
+        
+        <!-- Table and Image Container -->
+        <div class="table-image-container">
+            <!-- Table for Persona 1 -->
+            <table id="persona-table">
+                <tr>
+                    <th>Persona Type</th>
+                    <td>Casual Shopper</td>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td>Alex Johnson</td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <th>Location</th>
+                    <td>New York, USA</td>
+                </tr>
+                <tr>
+                    <th>Technical Comfort</th>
+                    <td>Moderate</td>
+                </tr>
+                <tr>
+                    <th>Profession</th>
+                    <td>Graphic Designer</td>
+                </tr>
+            </table>
+
+            <!-- Image of Persona 1 -->
+            <img id="persona-image" src="https://st.depositphotos.com/1743476/2514/i/950/depositphotos_25144791-stock-photo-portrait-of-happy-young-adult.jpg" alt="Persona 1">
+        </div>
+
+        <!-- Backstory Section -->
+        <div class="section-container">
+        <section>
+            <h2>Backstory</h2>
+            <ul>
+                <li>Grew up in a small town but moved to New York for work.</li>
+                <li>Always had a passion for creativity and design.</li>
+                <li>Worked in retail before becoming a graphic designer.</li>
+                <li>Loves to travel and take inspiration from different cultures.</li>
+            </ul>
+        </section>
+
+        <!-- Frustrations Section -->
+        <section>
+            <h2>Frustrations</h2>
+            <ul>
+                <li>Long wait times when purchasing items online.</li>
+                <li>Complicated website navigation.</li>
+                <li>Unclear product descriptions and reviews.</li>
+                <li>High shipping costs for international orders.</li>
+            </ul>
+        </section>
+
+        <!-- Motivations Section -->
+        <section>
+            <h2>Motivations</h2>
+            <ul>
+                <li>Finding unique products that match personal style.</li>
+                <li>Getting good deals and discounts on high-quality items.</li>
+                <li>Receiving fast and reliable customer service.</li>
+                <li>Staying updated on the latest trends in fashion and design.</li>
+            </ul>
+        </section>
+
+        <!-- Ideal Experience Section -->
+        <section>
+            <h2>Ideal Experience</h2>
+            <ul>
+                <li>Seamless online shopping with fast delivery options.</li>
+                <li>Clear and accurate product descriptions and reviews.</li>
+                <li>Personalized product recommendations based on preferences.</li>
+                <li>Efficient and easy checkout process.</li>
+            </ul>
+        </section>
+        </div>
+
+    </main>
+
+    <script>
+        // JavaScript to match image dimensions with the table
+        window.onload = function() {
+            var table = document.getElementById('persona-table');
+            var image = document.getElementById('persona-image');
+            
+            // Set the width and height of the image to match the table
+            image.style.width = table.offsetWidth + 'px';
+            image.style.height = table.offsetHeight + 'px';
+        };
+    </script>
+
+</body>
+</html>

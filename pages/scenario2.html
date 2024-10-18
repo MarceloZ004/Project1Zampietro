@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona 1</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .step {
+            background-color: #ffeb3b;
+            padding: 15px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .step:after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 10px;
+            border-style: solid;
+            border-color: #ffeb3b transparent transparent transparent;
+        }
+
+        .arrow {
+            width: 2px;
+            height: 30px;
+            background-color: gray;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="persona1.html">Persona 1</a></li>
+                <li><a href="persona2.html">Persona 2</a></li>
+                <li><a href="scenario1.html">Scenario 1</a></li>
+                <li><a href="scenario2.html">Scenario 2</a></li>
+                <li><a href="moodboard.html">Moodboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Scenario 2</h1>
+<!-- Scenario 2: Event Booking for a School Trip -->
+<h2>Scenario 2: Event Booking for a School Trip</h2>
+<div class="flowchart">
+    <div class="step">Emma, a teacher, wants to organize a school trip to the museum.</div>
+    <div class="arrow"></div>
+    <div class="step">She visits the museum's website on her laptop.</div>
+    <div class="arrow"></div>
+    <div class="step">Browses the “Plan Your Visit” section for group event bookings.</div>
+    <div class="arrow"></div>
+    <div class="step">Views available time slots for school trips.</div>
+    <div class="arrow"></div>
+    <div class="step">Chooses a preferred date and time for the visit.</div>
+    <div class="arrow"></div>
+    <div class="step">Receives additional information on educational workshops available during the visit.</div>
+    <div class="arrow"></div>
+    <div class="step">She selects a science workshop for her students.</div>
+    <div class="arrow"></div>
+    <div class="step">Emma enters her contact details and submits the booking request.</div>
+    <div class="arrow"></div>
+    <div class="step">Receives a confirmation email with booking details.</div>
+    <div class="arrow"></div>
+    <div class="step">Prints out the itinerary and informs her students about the upcoming trip.</div>
+</div>
+    </main>
+
+</body>
+</html>

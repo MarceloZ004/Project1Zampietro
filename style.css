@@ -1,0 +1,60 @@
+/* Basic styling for the navigation */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+main {
+    padding: 20px;
+}
+/* Styling the container to hold the sections */
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space between the sections */
+    gap: 20px; /* Optional: Adds space between the sections */
+}
+
+/* Each section will take up 48% of the width for two columns */
+.section-container section {
+    width: 48%; /* Adjust width as needed */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Ensure the sections stack properly on smaller screens */
+@media (max-width: 768px) {
+    .section-container section {
+        width: 100%; /* Full width for small screens */
+    }
+}
+
