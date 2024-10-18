@@ -9,6 +9,16 @@
         h1, h2{
             text-align:center;
         }
+        .image-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+}
+
+img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Keeps the aspect ratio */
+}
+
     </style>
 </head>
 <body>
@@ -38,7 +48,9 @@
         </head>
         <body>
             <h2 style="font-size: 15px;">Scenario 1</h2>
-            <img src="https://i.imgur.com/sLr7ZdL.png">
+            <div class="image-container">
+                <img src="https://i.imgur.com/sLr7ZdL.png">
+            </div>
         </body>
         </html>
             </main>
