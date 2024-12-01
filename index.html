@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-page Website</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        h1, p{
-            text-align:center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Homepage</a></li>
-                <li><a href="pages/persona1.html">Persona 1</a></li>
-                <li><a href="pages/persona2.html">Persona 2</a></li>
-                <li><a href="pages/scenario1.html">Scenario 1</a></li>
-                <li><a href="pages/scenario2.html">Scenario 2</a></li>
-                <li><a href="pages/storyboard.html">Storyboard</a></li>
-                <li><a href="pages/moodboard.html">Moodboard</a></li>
-                <li><a href="pages/flowchart.html">Flowchart</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Project 1, Marcelo Zampietro</h1>
-        <p>Use the navigation above to browse through the different pages.</p>
-    </main>
-
+  <div class="login-container">
+    <div class="login-form">
+      <h1>Welcome Back</h1>
+      <p>Please log in to your account</p>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group form-actions">
+          <button type="submit" class="btn-primary">Login</button>
+        </div>
+        <div class="form-links">
+          <a href="#" id="forgotPassword">Forgot Password?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/login.js"></script>
 </body>
 </html>
