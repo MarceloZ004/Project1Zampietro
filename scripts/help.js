@@ -39,6 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
           navPreferences: 'Preferences',
           navHelp: 'Help',
           logoutButton: 'Logout',
+          navHomepage: 'Homepage',
+          navPersona1: 'Persona 1',
+          navPersona2: 'Persona 2',
+          navScenario1: 'Scenario 1',
+          navScenario2: 'Scenario 2',
+          navStoryboard: 'Storyboard',
+          navMoodboard: 'Moodboard',
+          navFlowchart: 'Flowchart',
         },
         es: {
           helpHeader: 'Ayuda y Preguntas Frecuentes',
@@ -52,6 +60,14 @@ document.addEventListener('DOMContentLoaded', () => {
           navPreferences: 'Preferencias',
           navHelp: 'Ayuda',
           logoutButton: 'Cerrar Sesión',
+          navHomepage: 'Inicio',
+          navPersona1: 'Persona 1',
+          navPersona2: 'Persona 2',
+          navScenario1: 'Escenario 1',
+          navScenario2: 'Escenario 2',
+          navStoryboard: 'Guion Gráfico',
+          navMoodboard: 'Tablero de Inspiración',
+          navFlowchart: 'Diagrama de Flujo',
         },
       };
   
@@ -62,6 +78,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('a[href="preferences.html"]').textContent = langData.navPreferences;
         document.querySelector('a[href="help.html"]').textContent = langData.navHelp;
         document.getElementById('logoutButton').textContent = langData.logoutButton; // Update Logout button text
+        document.querySelector('a[href="persona1.html"]').textContent = langData.navPersona1;
+        document.querySelector('a[href="persona2.html"]').textContent = langData.navPersona2;
+        document.querySelector('a[href="scenario1.html"]').textContent = langData.navScenario1;
+        document.querySelector('a[href="scenario2.html"]').textContent = langData.navScenario2;
+        document.querySelector('a[href="storyboard.html"]').textContent = langData.navStoryboard;
+        document.querySelector('a[href="moodboard.html"]').textContent = langData.navMoodboard;
+        document.querySelector('a[href="flowchart.html"]').textContent = langData.navFlowchart;
   
         const faqs = document.querySelectorAll('.faq');
         faqs[0].innerHTML = `<strong>${langData.faq1}</strong><p>${langData.faq1Detail}</p>`;

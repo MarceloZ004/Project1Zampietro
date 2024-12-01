@@ -63,6 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
           logoutButton: 'Logout',
           navPreferences: 'Preferences',
           navHelp: 'Help',
+          navHomepage: 'Homepage',
+          navPersona1: 'Persona 1',
+          navPersona2: 'Persona 2',
+          navScenario1: 'Scenario 1',
+          navScenario2: 'Scenario 2',
+          navStoryboard: 'Storyboard',
+          navMoodboard: 'Moodboard',
+          navFlowchart: 'Flowchart',
         },
         es: {
           preferencesHeader: `Preferencias del Usuario para ${username}`,
@@ -72,6 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
           logoutButton: 'Cerrar Sesión',
           navPreferences: 'Preferencias',
           navHelp: 'Ayuda',
+          navHomepage: 'Inicio',
+          navPersona1: 'Persona 1',
+          navPersona2: 'Persona 2',
+          navScenario1: 'Escenario 1',
+          navScenario2: 'Escenario 2',
+          navStoryboard: 'Guion Gráfico',
+          navMoodboard: 'Tablero de Inspiración',
+          navFlowchart: 'Diagrama de Flujo',
         },
       };
   
@@ -84,6 +100,14 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('logoutButton').textContent = langData.logoutButton;
         document.querySelector('a[href="preferences.html"]').textContent = langData.navPreferences;
         document.querySelector('a[href="help.html"]').textContent = langData.navHelp;
+        document.querySelector('a[href="main.html"]').textContent = langData.navHomepage;
+        document.querySelector('a[href="persona1.html"]').textContent = langData.navPersona1;
+        document.querySelector('a[href="persona2.html"]').textContent = langData.navPersona2;
+        document.querySelector('a[href="scenario1.html"]').textContent = langData.navScenario1;
+        document.querySelector('a[href="scenario2.html"]').textContent = langData.navScenario2;
+        document.querySelector('a[href="storyboard.html"]').textContent = langData.navStoryboard;
+        document.querySelector('a[href="moodboard.html"]').textContent = langData.navMoodboard;
+        document.querySelector('a[href="flowchart.html"]').textContent = langData.navFlowchart;
       }
     }
   });  
